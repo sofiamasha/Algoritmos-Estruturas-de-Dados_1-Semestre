@@ -2,6 +2,7 @@
 e mostrar o número invertido (no formato UDC). O número invertido deve ser armazenado em
 outra variável antes de ser mostrado */
 
+/*TEM Q SER DIVIDIN*/
 
 #include <stdio.h>
 int main(){
