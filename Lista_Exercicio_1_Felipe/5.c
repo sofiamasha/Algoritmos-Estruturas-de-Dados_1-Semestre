@@ -1,0 +1,1 @@
+/*Ler o lado de um quadrado e mostrar o seu perímetro, área e diagonal.*/

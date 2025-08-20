@@ -1,0 +1,1 @@
+/*Ler a base e a altura de um retângulo e mostrar o seu perímetro, área e diagonal*/
