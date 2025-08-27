@@ -2,6 +2,17 @@
 ler numeros inteiros ate que seja digitado 0
 para cada numero digitado verificar e mostrar se ele é primo ou nao*/
 
+/*Se quiser contar quantos divisores tem:
+depois do primeiro printf adiciona:
+while(num!=0){
+divisor=0;
+i=num;
+while(i>0){
+if(num%i==0) divisor ++;
+i--;
+}
+if
+}*/
 #include <stdio.h>
 int main()
 {
