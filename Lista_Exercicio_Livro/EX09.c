@@ -2,11 +2,12 @@
 calcule e mostre a hora digitada apenas em minutos. Lembre-se de que:
     ■ para quatro e meia, deve-se digitar 4.30;
     ■ os minutos vão de 0 a 59.*/
-//esse eu buguei mas o codigo ta certo
-    #include <stdio.h>
+// esse eu buguei mas o codigo ta certo
+#include <stdio.h>
 
-int main() {
-    float hora, hora2, min;  
+int main()
+{
+    float hora, hora2, min;
 
     // Mensagem inicial
     printf("TRANSFORMACAO DE HORAS EM MINUTOS\n\n");

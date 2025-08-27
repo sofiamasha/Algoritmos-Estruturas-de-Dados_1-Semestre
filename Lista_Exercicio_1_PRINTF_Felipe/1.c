@@ -5,14 +5,14 @@ outra variável antes de ser mostrado */
 /*TEM Q SER DIVIDIN*/
 
 #include <stdio.h>
-int main(){
-int c,d,u;
-printf("Digite os numeros separados por espaco:");
-scanf("%d %d %d",&c,&d,&u);
-printf("Seu numero eh %d %d %d\n", c,d,u);
+int main()
+{
+    int c, d, u;
+    printf("Digite os numeros separados por espaco:");
+    scanf("%d %d %d", &c, &d, &u);
+    printf("Seu numero eh %d %d %d\n", c, d, u);
 
-printf("Seu numero invertido eh %d %d %d\n",u,d,c);
-
+    printf("Seu numero invertido eh %d %d %d\n", u, d, c);
 
     return 0;
 }

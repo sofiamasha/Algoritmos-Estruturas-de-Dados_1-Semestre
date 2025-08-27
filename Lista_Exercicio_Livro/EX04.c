@@ -4,7 +4,8 @@ CPMF de 0,38% e o saldo inicial da conta está zerado..*/
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float salario, cheque1, cheque2, cpmf1, cpmf2, saldo;
 
     // Entrada do salário

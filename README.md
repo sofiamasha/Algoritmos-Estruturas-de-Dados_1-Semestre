@@ -73,9 +73,11 @@ Agora, siga o formato abaixo (troque os números conforme o exercício):
 
 GCC EX02.C -o EX02.ESH
 EX02.ESH
+ Se tiver dentro de uma pasta(troque os números conforme o nome da pasta):
 
-
-
+ gcc LABORATORIO_27_8/EX15.c -o EX15.exe
+    ./EX15.c
+    
 Observações importantes:  !!!!!!
 
 Se seu GCC gerar .exe por padrão (Windows), use:

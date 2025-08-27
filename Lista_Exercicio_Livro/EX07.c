@@ -3,11 +3,11 @@ chão e encostada na parede e a altura da parede onde está a ponta da escada. C
 Observação: as funções trigonométricas implementadas nas linguagens de programação trabalham
 com medidas de ângulos em radianos. */
 
-
 #include <stdio.h>
 #include <math.h> // Necessário para usar sin()
 
-int main() {
+int main()
+{
     float anguloGraus, altura, escada, anguloRad;
 
     printf("CALCULO DE COMPRIMENTO DA ESCADA\n\n");
@@ -19,7 +19,7 @@ int main() {
     scanf("%f", &anguloGraus);
 
     // Converte para radianos
-    anguloRad = anguloGraus * M_PI / 180.0;
+    anguloRad = anguloGraus * 3.14 / 180.0;
 
     // Calcula o comprimento da escada
     escada = altura / sin(anguloRad);

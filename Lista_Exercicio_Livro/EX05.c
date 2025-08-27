@@ -5,7 +5,8 @@ cada gato, calcule e mostre quanto restará de ração no saco após cinco dias.
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float racaoKg, porGatoGramas, racaoGramas, consumoTotal, sobraGramas, sobraKg;
 
     printf("Digite quantos kg tem o pacote de racao: ");

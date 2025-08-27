@@ -6,7 +6,8 @@ c) o arredondamento desse número. */
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main()
+{
     float numero;
     int parteInteira;
     float parteFracionaria;
