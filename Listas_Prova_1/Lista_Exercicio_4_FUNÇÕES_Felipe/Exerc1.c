@@ -5,12 +5,14 @@ o valor de n e chamar a função desenvolvida nesta questão.*/
 #include <stdio.h>
 
 // Função que retorna o n-ésimo termo da sequência de pares
-int par(int n) {
+int par(int n)
+{
     return 2 * n;
 }
 
 // Procedimento que lê n e chama a função
-void exercicio01() {
+void exercicio01()
+{
     int n;
     printf("Digite o valor de n: ");
     scanf("%d", &n);
@@ -19,7 +21,8 @@ void exercicio01() {
     printf("O %dº termo da sequência de pares é: %d\n", n, resultado);
 }
 
-int main() {
+int main()
+{
     exercicio01();
     return 0;
 }

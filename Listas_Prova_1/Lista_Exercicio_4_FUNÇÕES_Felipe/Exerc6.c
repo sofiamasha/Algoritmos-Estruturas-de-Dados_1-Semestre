@@ -4,17 +4,20 @@ questão*/
 
 #include <stdio.h>
 
-int multiplos(int n){
+int multiplos(int n)
+{
     int resultado = 0;
-    for(int i = 1; i <= n; i++){
+    for (int i = 1; i <= n; i++)
+    {
         resultado = 5 * i;
         printf("%d ", resultado);
     }
-    printf("\n"); // pula linha depois dos múltiplos
+    printf("\n");     // pula linha depois dos múltiplos
     return resultado; // retorna o último múltiplo
 }
 
-void exercicioXX(){
+void exercicioXX()
+{
     int n;
     printf("Digite o valor de n: ");
     scanf("%d", &n);
@@ -23,7 +26,8 @@ void exercicioXX(){
     printf("O último múltiplo é %d\n", resultado);
 }
 
-int main(){
+int main()
+{
     exercicioXX();
     return 0;
 }

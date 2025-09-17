@@ -3,15 +3,20 @@
 #include <stdio.h>
 
 // Função recursiva para multiplicar a e b
-int multiplicar(int a, int b) {
-    if (b == 0) {
+int multiplicar(int a, int b)
+{
+    if (b == 0)
+    {
         return 0; // caso base
-    } else {
+    }
+    else
+    {
         return a + multiplicar(a, b - 1); // soma a repetidamente
     }
 }
 
-int main() {
+int main()
+{
     int x, y;
     printf("Digite dois números naturais: ");
     scanf("%d %d", &x, &y);

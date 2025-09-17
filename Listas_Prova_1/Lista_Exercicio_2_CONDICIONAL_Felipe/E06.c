@@ -8,7 +8,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main()
+{
     char figura;
     float raio, area;
 
@@ -20,25 +21,29 @@ int main() {
     scanf("%f", &raio);
 
     // Verificação do caractere e cálculo da área
-    if (figura == 'T' || figura == 't') {
+    if (figura == 'T' || figura == 't')
+    {
         // Triângulo equilátero inscrito
         float lado = raio * sqrt(3); // fórmula derivada da geometria
         area = (sqrt(3) / 4) * lado * lado;
         printf("Área do triângulo inscrito: %.2f\n", area);
-
-    } else if (figura == 'Q' || figura == 'q') {
+    }
+    else if (figura == 'Q' || figura == 'q')
+    {
         // Quadrado inscrito
         float lado = raio * sqrt(2);
         area = lado * lado;
         printf("Área do quadrado inscrito: %.2f\n", area);
-
-    } else if (figura == 'H' || figura == 'h') {
+    }
+    else if (figura == 'H' || figura == 'h')
+    {
         // Hexágono regular inscrito
         float lado = raio; // em um hexágono inscrito, o lado = raio
         area = (3 * sqrt(3) / 2) * lado * lado;
         printf("Área do hexágono inscrito: %.2f\n", area);
-
-    } else {
+    }
+    else
+    {
         printf("Caractere inválido. Use T, Q ou H.\n");
     }
 

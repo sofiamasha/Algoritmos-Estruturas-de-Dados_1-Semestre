@@ -5,35 +5,37 @@ para chamar a função desenvolvida nesta questão.
 
 #include <stdio.h>
 
-int Fibonacci(int n){
+int Fibonacci(int n)
+{
 
-if(n<=1){
-    return 1;
+    if (n <= 1)
+    {
+        return 1;
+    }
+    int a = 1, b = 1, resultado = a;
+
+    while (b < n)
+    {
+        resultado = b;
+        int proximo = a + b;
+        a = b;
+        b = proximo;
+    }
+    return resultado;
 }
-int a=1,b=1,resultado=a;
 
-  while(b<n){
-      resultado=b;
-      int proximo=a+b;
-      a=b;
-      b=proximo;
-  }
-  return resultado;
-  
-}
-
-int exercicioXX(){
+int exercicioXX()
+{
     int n;
     printf("Digite o valor de n: ");
     scanf("%d", &n);
 
     int resultado = Fibonacci(n);
-    printf("O maior termo da sequência de Fibonacci é %d\n",resultado);
+    printf("O maior termo da sequência de Fibonacci é %d\n", resultado);
 }
 
-
-
-int main(){
+int main()
+{
     exercicioXX();
     return 0;
 }

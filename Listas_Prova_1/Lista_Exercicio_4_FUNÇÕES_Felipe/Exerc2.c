@@ -7,20 +7,24 @@ para ler o valor de n e chamar a função desenvolvida nesta questão*/
 #include <stdio.h>
 
 // Função que retorna o n-ésimo par
-int par(int n) {
+int par(int n)
+{
     return 2 * n;
 }
 
 // Mostra os pares menores que n, em ordem decrescente
-void mostrarParesEmOrdemDecrescente(int n) {
-    for (int i = n - 1; i >= 1; i--) {
+void mostrarParesEmOrdemDecrescente(int n)
+{
+    for (int i = n - 1; i >= 1; i--)
+    {
         printf("%d ", par(i));
     }
     printf("\n");
 }
 
 // Procedimento que chama a função
-void exercicio02() {
+void exercicio02()
+{
     int n;
     printf("Digite um valor para n: ");
     scanf("%d", &n);
@@ -29,7 +33,8 @@ void exercicio02() {
     mostrarParesEmOrdemDecrescente(n);
 }
 
-int main() {
+int main()
+{
     exercicio02();
     return 0;
 }

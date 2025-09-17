@@ -4,15 +4,20 @@ m e n*/
 #include <stdio.h>
 
 // Função recursiva para calcular o MDC
-int mdc(int m, int n) {
-    if (n == 0) {
+int mdc(int m, int n)
+{
+    if (n == 0)
+    {
         return m;
-    } else {
+    }
+    else
+    {
         return mdc(n, m % n);
     }
 }
 
-int main() {
+int main()
+{
     int m, n;
     printf("Digite dois inteiros positivos: ");
     scanf("%d %d", &m, &n);

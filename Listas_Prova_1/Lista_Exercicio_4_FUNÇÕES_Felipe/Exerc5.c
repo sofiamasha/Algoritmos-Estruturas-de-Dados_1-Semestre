@@ -6,18 +6,19 @@ nesta questão.
 
 #include <stdio.h>
 
-
-int fatorial(int n) {
-    int resultado=1;
-    for(int i=1; i<=n; i++){
-        resultado=resultado*i;
+int fatorial(int n)
+{
+    int resultado = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        resultado = resultado * i;
     }
-    return resultado; 
-
+    return resultado;
 }
 
 // Procedimento para ler n e chamar a função
-void exercicio08() {
+void exercicio08()
+{
     int n;
     printf("Digite o valor de n: ");
     scanf("%d", &n);
@@ -26,7 +27,8 @@ void exercicio08() {
     printf("o fatorial de %d eh %d\n", n, resultado);
 }
 
-int main() {
+int main()
+{
     exercicio08();
     return 0;
 }

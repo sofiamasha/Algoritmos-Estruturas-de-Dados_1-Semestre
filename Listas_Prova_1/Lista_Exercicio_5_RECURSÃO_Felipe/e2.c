@@ -2,14 +2,17 @@
 
 #include <stdio.h>
 
-void imprimirBinario(int n) {
-    if (n > 1) {
+void imprimirBinario(int n)
+{
+    if (n > 1)
+    {
         imprimirBinario(n / 2); // chamada recursiva
     }
     printf("%d", n % 2); // imprime o bit
 }
 
-int main() {
+int main()
+{
     int num;
     printf("Digite um número natural: ");
     scanf("%d", &num);
