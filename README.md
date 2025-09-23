@@ -1,117 +1,192 @@
-Algoritmos e Estruturas de Dados — Exercícios em C (1º período) ✨
+Perfeito, Sofia 😍 entendi direitinho agora. Você quer um **README raiz** bem organizado, cheio de divisórias, emojis, títulos grandes, índice bonitinho e cada parte separada certinho — sem ficar aquele textão grudado.
 
+Aqui está um modelo **pronto para copiar e colar** no seu repositório:
 
+---
 
-Coleção de ~10 exercícios resolvidos em C, pensados para quem está cursando Algoritmos e Estruturas de Dados no 1º período. Ideais para treinar lógica, I/O, casting, matemática básica e um tiquinho de trigonometria. Use como portfólio e prática! 🚀
+````markdown
+# 📘 Algoritmos & Estruturas de Dados — PUC Minas
 
+Bem-vindo(a)! 🚀  
+Este repositório foi criado para ajudar estudantes do **1º semestre de Ciência da Computação - PUC Minas** 📚.  
+Aqui você encontra **resumos, exemplos de código e exercícios** organizados por provas (1️⃣, 2️⃣ e 3️⃣).
 
+> ✨ Feito por **Sofia** com carinho para quem está aprendendo (e repetindo 😅) a matéria.
 
+---
 
-📁 Organização do repositório
+## 📑 Índice
 
-EX01.c … EX10.c — cada arquivo contém:
+- [📘 Prova 1 — Introdução à Programação](#-prova-1--introdução-à-programação)
+- [🖇️ Prova 2 — Ponteiros e Memória](#️-prova-2--ponteiros-e-memória)
+- [⚙️ Prova 3 — Estruturas de Dados](#️-prova-3--estruturas-de-dados)
+- [💡 Dicas de Estudo](#-dicas-de-estudo)
+- [📂 Organização do Repositório](#-organização-do-repositório)
 
-enunciado no topo (comentado);
+---
 
-solução em C, direta e didática;
+# 📘 Prova 1 — Introdução à Programação
 
-I/O via scanf/printf.
+### 📍 Conteúdos principais:
+- `printf` e `scanf` 🖥️  
+- Tipos de dados (`int`, `float`, `char`...)  
+- Estruturas de controle: `if`, `else`, `switch`, `for`, `while`, `do-while` 🔁  
+- Funções (definição, parâmetros e retorno) 🔧  
+- Recursão 🌀  
 
-Dica: abra os arquivos na ordem; a dificuldade cresce aos poucos. 😉
+---
 
+### 🚀 Exemplo simples (C)
+```c
+#include <stdio.h>
 
+int soma(int a, int b) {
+    return a + b;
+}
 
+int main() {
+    int x, y;
+    printf("Digite dois números: ");
+    scanf("%d %d", &x, &y);
 
-🧪 O que você treina aqui
+    printf("Resultado: %d\n", soma(x, y));
+    return 0;
+}
+````
 
-entrada/saída com scanf e printf;
+---
 
-conversões e casting ((int), float);
+### ✅ Checklist de estudos
 
-contas com porcentagem e taxas;
+* [x] Sei usar `printf` e `scanf`
+* [x] Sei declarar variáveis e entender seus tipos
+* [ ] Consigo usar laços de repetição
+* [ ] Sei criar funções
+* [ ] Entendo recursão
 
-manipulação de partes inteira/fracionária;
+---
 
-conversão de unidades (horas→min, kg↔g);
+# 🖇️ Prova 2 — Ponteiros e Memória
 
-noções de trigonometria (graus→radianos com sin).
+### 📍 Conteúdos principais:
 
-Exemplos de temas incluídos:
+* Ponteiros (`*` e `&`) ➰
+* Alocação dinâmica (`malloc`, `free`) 🧩
+* Vetores e Strings (armazenamento em memória)
+* Funções com ponteiros (passagem por referência)
+* Ponteiros para funções (avançado)
 
-saldo com CPMF em cheques;
+---
 
-sobra de ração para dois gatos em 5 dias;
+### 🚀 Exemplo simples (C)
 
-comprimento da escada usando ângulo e altura (seno);
+```c
+#include <stdio.h>
 
-parte inteira, fracionária e arredondamento de um real;
+int main() {
+    int x = 10;
+    int *ptr = &x;
 
-converter “hora.min” para minutos totais.
+    printf("Valor de x: %d\n", x);
+    printf("Endereço de x: %p\n", &x);
+    printf("Valor via ponteiro: %d\n", *ptr);
 
+    return 0;
+}
+```
 
+---
 
+### ✅ Checklist de estudos
 
-🛠️ Pré-requisitos
+* [x] Sei declarar ponteiros
+* [ ] Sei acessar valores e endereços com `*` e `&`
+* [ ] Sei usar `malloc` e `free`
+* [ ] Sei manipular strings e vetores com ponteiros
 
-GCC instalado (ex.: MinGW-w64 no Windows);
+---
 
-VS Code (opcional, mas recomendado);
+# ⚙️ Prova 3 — Estruturas de Dados
 
-Terminal configurado (PowerShell, CMD ou bash).
+### 📍 Conteúdos principais:
 
+* Structs 🗂️
+* Listas encadeadas ➰
+* Pilhas (Stacks) 🥞
+* Filas (Queues) 🎟️
+* Árvores 🌳
+* Busca e ordenação 🔎
 
+---
 
+### 🚀 Exemplo simples (C - Struct)
 
-▶️ Como compilar e rodar (VS Code + GCC)
+```c
+#include <stdio.h>
+#include <string.h>
 
-Antes de compilar, entre na pasta do projeto no terminal:
+struct Aluno {
+    int matricula;
+    char nome[50];
+};
 
-cd CAMINHO\DA\SUA\PASTA
+int main() {
+    struct Aluno a1;
+    a1.matricula = 123;
+    strcpy(a1.nome, "Sofia");
 
+    printf("Matrícula: %d\n", a1.matricula);
+    printf("Nome: %s\n", a1.nome);
 
-Agora, siga o formato abaixo (troque os números conforme o exercício):
+    return 0;
+}
+```
 
-GCC EX02.C -o EX02.ESH
-EX02.ESH
- Se tiver dentro de uma pasta(troque os números conforme o nome da pasta):
+---
 
- gcc LABORATORIO_27_8/EX15.c -o EX15.exe
-    ./EX15.c
-    
-Observações importantes:  !!!!!!
+### ✅ Checklist de estudos
 
-Se seu GCC gerar .exe por padrão (Windows), use:
+* [ ] Sei criar e usar `struct`
+* [ ] Sei implementar lista encadeada
+* [ ] Sei diferenciar pilha e fila
+* [ ] Sei implementar árvore binária
 
-gcc EX02.c -o EX02.exe
-.\EX02.exe
+---
 
+# 💡 Dicas de Estudo
 
-“No such file or directory”? Você não está na pasta dos arquivos. Use cd até a pasta correta.
+✨ Algumas estratégias para mandar bem:
 
-Nomes em Windows não diferenciam maiúsculas/minúsculas, mas mantenha padrão para evitar confusão.
+1. **Pratique no papel e no computador** — ajuda a fixar lógica.
+2. **Explique para alguém** — se você consegue explicar, você sabe.
+3. **Refaça exercícios de provas antigas**.
+4. **Não tenha medo de errar** — compilar, errar e corrigir é parte do processo.
 
+---
 
+# 📂 Organização do Repositório
 
-🧩 Dicas rápidas de estudo
+```
+📦 algoritmos-estrutura-dados
+ ┣ 📁 prova1
+ ┃ ┗ 📄 README.md
+ ┣ 📁 prova2
+ ┃ ┗ 📄 README.md
+ ┣ 📁 prova3
+ ┃ ┗ 📄 README.md
+ ┗ 📄 README.md (este arquivo geral)
+```
 
-Parte fracionária: fracao = x - (int)x;
+---
 
-Arredondar: #include <math.h> e round(x);
+> ✨ Feito com ❤️ por **Sofia** — boa sorte nos estudos! 🚀
 
-Graus → radianos: rad = graus * M_PI / 180.0; (precisa #include <math.h>);
+```
 
-“Hora.min”: extraia a parte inteira como horas e multiplique a parte decimal por 100 para minutos (ex.: 4.30 → 4h e 30min).
+---
 
+Esse modelo está **separadinho**, com **barras divisórias**, **emojis** em tudo e já inclui **checklists, exemplos e índice**.  
+Você só precisa **copiar e colar** no `README.md` principal.  
 
-
-🤝 Contribuindo
-
-Achou um jeito mais simples, legível ou com melhor tratamento de erros? Faça um fork e abra um PR. Comentários didáticos são super bem-vindos! ✍️
-
-
-
-📜 Licença
-
-MIT. Use, estude e compartilhe livremente. 💖
-
-Feito com carinho para quem está começando — bora codar! 💻✨
+Quer que eu faça também os **READMEs individuais** para cada pasta (`prova1`, `prova2`, `prova3`) seguindo esse mesmo estilo?
+```
