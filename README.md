@@ -1,8 +1,3 @@
-Perfeito, Sofia 😍 entendi direitinho agora. Você quer um **README raiz** bem organizado, cheio de divisórias, emojis, títulos grandes, índice bonitinho e cada parte separada certinho — sem ficar aquele textão grudado.
-
-Aqui está um modelo **pronto para copiar e colar** no seu repositório:
-
----
 
 ````markdown
 # 📘 Algoritmos & Estruturas de Dados — PUC Minas
