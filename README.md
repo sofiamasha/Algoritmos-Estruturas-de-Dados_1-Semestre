@@ -6,7 +6,7 @@ Bem-vindo(a)! 🚀
 Este repositório foi criado para ajudar estudantes do **1º semestre de Ciência da Computação - PUC Minas** 📚.  
 Aqui você encontra **resumos, exemplos de código e exercícios** organizados por provas (1️⃣, 2️⃣ e 3️⃣).
 
-> ✨ Feito por **Sofia** com carinho para quem está aprendendo (e repetindo 😅) a matéria.
+> ✨ Feito por **Sofia** para quem está aprendendo (e repetindo ) a matéria.
 
 ---
 
@@ -159,29 +159,3 @@ int main() {
 
 ---
 
-# 📂 Organização do Repositório
-
-```
-📦 algoritmos-estrutura-dados
- ┣ 📁 prova1
- ┃ ┗ 📄 README.md
- ┣ 📁 prova2
- ┃ ┗ 📄 README.md
- ┣ 📁 prova3
- ┃ ┗ 📄 README.md
- ┗ 📄 README.md (este arquivo geral)
-```
-
----
-
-> ✨ Feito com ❤️ por **Sofia** — boa sorte nos estudos! 🚀
-
-```
-
----
-
-Esse modelo está **separadinho**, com **barras divisórias**, **emojis** em tudo e já inclui **checklists, exemplos e índice**.  
-Você só precisa **copiar e colar** no `README.md` principal.  
-
-Quer que eu faça também os **READMEs individuais** para cada pasta (`prova1`, `prova2`, `prova3`) seguindo esse mesmo estilo?
-```
