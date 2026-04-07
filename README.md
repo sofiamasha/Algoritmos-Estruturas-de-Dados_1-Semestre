@@ -1,37 +1,36 @@
+# 💖📘 Algoritmos & Estruturas de Dados I (AEDs I)
 
-````markdown
-# 📘 Algoritmos & Estruturas de Dados — PUC Minas
+✨ Repositório com resumos, exemplos e exercícios da disciplina de **Algoritmos e Estruturas de Dados I — PUC Minas**
 
-Bem-vindo(a)! 🚀  
-Este repositório foi criado para ajudar estudantes do **1º semestre de Ciência da Computação - PUC Minas** 📚.  
-Aqui você encontra **resumos, exemplos de código e exercícios** organizados por provas (1️⃣, 2️⃣ e 3️⃣).
-
-> ✨ Feito por **Sofia** para quem está aprendendo (e repetindo ) a matéria.
+> 💡 Um guia feito para sobreviver (e entender) a matéria
 
 ---
 
 ## 📑 Índice
 
-- [📘 Prova 1 — Introdução à Programação](#-prova-1--introdução-à-programação)
-- [🖇️ Prova 2 — Ponteiros e Memória](#️-prova-2--ponteiros-e-memória)
-- [⚙️ Prova 3 — Estruturas de Dados](#️-prova-3--estruturas-de-dados)
-- [💡 Dicas de Estudo](#-dicas-de-estudo)
-- [📂 Organização do Repositório](#-organização-do-repositório)
+* [📘 Prova 1 — Introdução à Programação](#-prova-1--introdução-à-programação)
+* [🖇️ Prova 2 — Ponteiros e Memória](#️-prova-2--ponteiros-e-memória)
+* [⚙️ Prova 3 — Estruturas de Dados](#️-prova-3--estruturas-de-dados)
+* [💡 Dicas de Estudo](#-dicas-de-estudo)
+* [📂 Organização](#-organização)
 
 ---
 
 # 📘 Prova 1 — Introdução à Programação
 
-### 📍 Conteúdos principais:
-- `printf` e `scanf` 🖥️  
-- Tipos de dados (`int`, `float`, `char`...)  
-- Estruturas de controle: `if`, `else`, `switch`, `for`, `while`, `do-while` 🔁  
-- Funções (definição, parâmetros e retorno) 🔧  
-- Recursão 🌀  
+## 🌸 Conteúdos principais
+
+* Entrada e saída (`printf`, `scanf`) 🖥️
+* Tipos de dados (`int`, `float`, `char`)
+* Estruturas condicionais (`if`, `else`, `switch`)
+* Laços de repetição (`for`, `while`, `do-while`) 🔁
+* Funções 🔧
+* Recursão 🌀
 
 ---
 
-### 🚀 Exemplo simples (C)
+## 🚀 Exemplo simples (C)
+
 ```c
 #include <stdio.h>
 
@@ -47,33 +46,33 @@ int main() {
     printf("Resultado: %d\n", soma(x, y));
     return 0;
 }
-````
+```
 
 ---
 
-### ✅ Checklist de estudos
+## ✅ Checklist
 
-* [x] Sei usar `printf` e `scanf`
-* [x] Sei declarar variáveis e entender seus tipos
-* [ ] Consigo usar laços de repetição
-* [ ] Sei criar funções
-* [ ] Entendo recursão
+* [x] Sei usar entrada e saída
+* [x] Entendo tipos de dados
+* [ ] Sei usar laços com segurança
+* [ ] Consigo criar funções sozinho
+* [ ] Entendo recursão sem surtar
 
 ---
 
 # 🖇️ Prova 2 — Ponteiros e Memória
 
-### 📍 Conteúdos principais:
+## 🌸 Conteúdos principais
 
 * Ponteiros (`*` e `&`) ➰
+* Endereçamento de memória
+* Vetores e strings
 * Alocação dinâmica (`malloc`, `free`) 🧩
-* Vetores e Strings (armazenamento em memória)
-* Funções com ponteiros (passagem por referência)
-* Ponteiros para funções (avançado)
+* Passagem por referência
 
 ---
 
-### 🚀 Exemplo simples (C)
+## 🚀 Exemplo simples (C)
 
 ```c
 #include <stdio.h>
@@ -92,29 +91,29 @@ int main() {
 
 ---
 
-### ✅ Checklist de estudos
+## ✅ Checklist
 
 * [x] Sei declarar ponteiros
-* [ ] Sei acessar valores e endereços com `*` e `&`
+* [ ] Entendo bem `*` e `&`
 * [ ] Sei usar `malloc` e `free`
-* [ ] Sei manipular strings e vetores com ponteiros
+* [ ] Sei manipular strings na prática
 
 ---
 
 # ⚙️ Prova 3 — Estruturas de Dados
 
-### 📍 Conteúdos principais:
+## 🌸 Conteúdos principais
 
-* Structs 🗂️
+* `struct` 🗂️
 * Listas encadeadas ➰
-* Pilhas (Stacks) 🥞
-* Filas (Queues) 🎟️
-* Árvores 🌳
+* Pilhas (stack) 🥞
+* Filas (queue) 🎟️
+* Introdução a árvores 🌳
 * Busca e ordenação 🔎
 
 ---
 
-### 🚀 Exemplo simples (C - Struct)
+## 🚀 Exemplo simples (Struct em C)
 
 ```c
 #include <stdio.h>
@@ -128,7 +127,7 @@ struct Aluno {
 int main() {
     struct Aluno a1;
     a1.matricula = 123;
-    strcpy(a1.nome, "Sofia");
+    strcpy(a1.nome, "Aluno");
 
     printf("Matrícula: %d\n", a1.matricula);
     printf("Nome: %s\n", a1.nome);
@@ -139,23 +138,48 @@ int main() {
 
 ---
 
-### ✅ Checklist de estudos
+## ✅ Checklist
 
-* [ ] Sei criar e usar `struct`
-* [ ] Sei implementar lista encadeada
-* [ ] Sei diferenciar pilha e fila
-* [ ] Sei implementar árvore binária
+* [ ] Sei usar `struct`
+* [ ] Consigo implementar lista encadeada
+* [ ] Entendo pilha vs fila
+* [ ] Sei lógica básica de árvores
 
 ---
 
 # 💡 Dicas de Estudo
 
-✨ Algumas estratégias para mandar bem:
+✨ Algumas coisas que realmente ajudam:
 
-1. **Pratique no papel e no computador** — ajuda a fixar lógica.
-2. **Explique para alguém** — se você consegue explicar, você sabe.
-3. **Refaça exercícios de provas antigas**.
-4. **Não tenha medo de errar** — compilar, errar e corrigir é parte do processo.
+1. Pratique escrevendo código (não só lendo)
+2. Refaça exercícios de prova
+3. Tente explicar o código em voz alta
+4. Erre bastante (é literalmente assim que aprende)
+
+💭 Tradução real:
+se não praticar, não aprende. não tem atalho.
 
 ---
 
+# 📂 Organização
+
+📁 O repositório está dividido em:
+
+* Provas
+* Exercícios
+* Exemplos de código
+
+---
+
+## 🌷 Observação final
+
+AEDs I é onde muita gente trava…
+mas também é onde tudo começa a fazer sentido.
+
+Se você entende isso aqui, o resto do curso fica muito mais leve.
+
+(ou pelo menos menos caótico)
+
+---
+
+💖 Repositório mantido por estudante de Ciência da Computação — PUC Minas
